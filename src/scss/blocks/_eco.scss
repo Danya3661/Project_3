@@ -1,0 +1,104 @@
+.eco {
+	padding: 0;
+}
+
+.eco__in {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.eco__coll {
+	&.eco__coll.eco__coll--one {
+		@include bp($point_2, min) {
+			width: 95.2rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+			display: none;
+		}
+	}
+	&.eco__coll.eco__coll--two {
+		background-color: $white-color;
+
+		@include bp($point_2, min) {
+			width: 63.4rem;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 60%;
+			border-radius: 3rem;
+			box-shadow: 2px -1px 16px -3px rgba(0, 0, 0, 0.75);
+			padding: 8rem 9rem;
+		}
+
+		@include bp($point_3) {
+			width: 100%;
+			padding: 4rem 4rem;
+			text-align: center;
+		}
+	}
+}
+.eco__img_w {
+	width: 95.2rem;
+	height: 93rem;
+	display: block;
+	object-fit: contain;
+}
+.eco__img {
+	@extend %contain_image;
+}
+.eco__info {
+	display: flex;
+	flex-direction: column;
+}
+.eco__main_subtitle {
+	font-family: $font_3;
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 5rem;
+	color: $green-color_accent;
+	margin-bottom: 0.8rem;
+}
+.eco__title {
+	font-weight: 800;
+
+	color: $accent-color;
+	margin-bottom: 3.4rem;
+
+	@include bp($point_2, min) {
+		line-height: 5.8rem;
+		font-size: 5rem;
+	}
+	
+	@include bp($point_3) {
+		line-height: 3.8rem;
+		font-size: 3rem;
+	}
+	
+}
+.eco__descr_list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3.4rem;
+}
+.eco__descr_item {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+}
+.eco__subtitle {
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 3rem;
+	color: $accent-color;
+}
+.eco__descr {
+	font-family: $font_2;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 3rem;
+	color: $text-color;
+}

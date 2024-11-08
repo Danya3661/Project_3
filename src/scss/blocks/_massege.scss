@@ -1,0 +1,140 @@
+.massege__in {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@include bp($point_2, min) {
+		justify-content: center;
+		column-gap: 7.4rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}
+.massege__coll {
+	@include bp($point_2, min) {
+		width: 50%;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+
+	&.massege__coll.massege__coll--two {
+		display: flex;
+		flex-direction: column;
+		
+		@include bp($point_3) {
+		align-items: center;
+		}
+		
+	}
+}
+.massege__img_w {
+	display: block;
+	object-fit: contain;
+
+	@include bp($point_2, min) {
+		width: 62.2rem;
+		height: 64rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+		height: 100%;
+	}
+}
+.massege__img {
+	@extend %contain_image;
+	border-radius: 4rem;
+}
+.massege__title {
+	margin-bottom: 1.4rem;
+
+	@include bp($point_3) {
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+}
+.massege__descr {
+	margin-bottom: 3.4rem;
+}
+.massege__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.6rem;
+	margin-bottom: 3.4rem;
+}
+.massege__item {
+	width: 35.2rem;
+	height: 11.4rem;
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+	background-color: transparent;
+	border: 1px solid #eeeeee;
+	border-radius: 1.6rem;
+	padding: 0 1.2rem;
+}
+.massege__item_img_w {
+	position: relative;
+	background-color: #f4f4f4;
+	width: 9rem;
+	height: 9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: contain;
+	border-radius: 1rem;
+}
+.massege__item_img1 {
+	width: 4.2rem;
+	height: 3rem;
+	display: block;
+	object-fit: contain;
+	z-index: 5;
+	&.massege__item_img1.massege__item_img1--index {
+		position: absolute;
+		z-index: 4;
+		top: 3.6rem;
+		left: 2rem;
+	}
+}
+.massege__item_img2 {
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	object-fit: contain;
+	z-index: 5;
+	&.massege__item_img2.massege__item_img2--index {
+		position: absolute;
+		z-index: 4;
+		top: 3rem;
+		left: 2rem;
+	}
+}
+.massege__item_info {
+	display: flex;
+	flex-direction: column;
+}
+.massege__item_title {
+	font-size: 2.4rem;
+	font-weight: 800;
+	line-height: 2.8rem;
+	color: $accent-color;
+}
+.massege__item_descr {
+	font-family: $font_2;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 3rem;
+	color: $text-color;
+	text-decoration: none;
+}
+.massege_socials {
+	display: flex;
+	align-items: center;
+	column-gap: 1.4rem;
+}

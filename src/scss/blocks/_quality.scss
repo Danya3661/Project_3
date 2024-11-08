@@ -1,0 +1,21 @@
+.quality {
+	background-image: url(../imgs/quality/quality.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 45rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.quality__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.quality__title {
+	font-size: 7rem;
+	font-weight: 800;
+	line-height: 8.2rem;
+    color: $accent-color;
+}

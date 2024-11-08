@@ -1,0 +1,145 @@
+.grow {
+	background-color: $white-color_3;
+}
+.grow__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		row-gap: 5rem;
+	}
+
+	@include bp($point_3) {
+		row-gap: 3rem;
+	}
+}
+
+.grow__main_info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+	text-align: center;
+
+	@include bp($point_2, min) {
+		width: 48.2rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.grow__main_title {
+	font-size: 3rem;
+	line-height: 3.8rem;
+}
+.grow__coll_w {
+	background-color: $white-color_3;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include bp($point_2, min) {
+		background-image: url(../imgs/grow/grow_7.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-blend-mode: multiply;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+	}
+}
+.grow__coll {
+	@include bp($point_2, min) {
+		width: 39.6rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.grow__list {
+	display: flex;
+	row-gap: 4rem;
+	flex-direction: column;
+	align-items: center;
+}
+.grow__item {
+	display: flex;
+	flex-direction: column;
+
+	&.grow__item.grow__item--right {
+		
+
+		@include bp($point_2, min) {
+			text-align: right;
+			align-items: end;
+		}
+
+		@include bp($point_3) {
+			text-align: left;
+			align-items: start;
+		}
+	}
+}
+.grow__img_w {
+	width: 4.4rem;
+	height: 4.4rem;
+	display: block;
+	object-fit: contain;
+	margin-bottom: 1.8rem;
+	position: relative;
+	z-index: 8;
+	&.grow__img_w.grow__img_w--br {
+		&::before {
+			content: '';
+			position: absolute;
+			width: 2.4rem;
+			height: 2.4rem;
+			background-color: #fff4cd;
+			border-radius: 50%;
+			top: 2.8rem;
+			left: 2.4rem;
+			z-index: -1;
+		}
+	}
+	&.grow__img_w.grow__img_w--bl {
+		&::before {
+			content: '';
+			position: absolute;
+			width: 2.4rem;
+			height: 2.4rem;
+			background-color: #fff4cd;
+			border-radius: 50%;
+			top: 2.8rem;
+			left: -0.6rem;
+			z-index: -1;
+		}
+	}
+}
+.grow__img {
+	@extend %contain_image;
+}
+.grow__item_title {
+	font-size: 2.4rem;
+	font-weight: 500;
+	line-height: 3rem;
+	margin-bottom: 0.6rem;
+	color: $accent-color;
+}
+.grow__btn {
+	@extend%btn_size_1;
+	@extend%btn_color_4;
+	@extend%btn_font_1;
+	@extend%btn_arrow;
+	padding: 0 3.4rem;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: $accent-color;
+		color: $white-color;
+	}
+}

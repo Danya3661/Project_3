@@ -1,0 +1,114 @@
+.offer {
+	background-color: $accent-color;
+}
+.offer__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 5rem;
+}
+.offer__coll {
+	width: 100%;
+	&.offer__coll.offer__coll--one {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include bp($point_2, min) {
+			justify-content: space-between;
+		}
+
+		@include bp($point_3) {
+			text-align: center;
+			flex-direction: column;
+			row-gap: 2rem;
+		}
+	}
+}
+.offer__main_info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.8rem;
+}
+.offer__subtitle {
+	font-family: $font_3;
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 5rem;
+	color: $green-color_accent;
+}
+.offer__title {
+	
+	font-weight: 800;
+
+	color: $white-color;
+	
+	@include bp($point_2, min) {
+		line-height: 5.8rem;
+		font-size: 5rem;
+	}
+	
+	@include bp($point_3) {
+		line-height: 3.8rem;
+		font-size: 3rem;
+	}
+	
+	
+}
+.offer__btn {
+	@extend%btn_size_3;
+	@extend%btn_color_1;
+	@extend%btn_font_1;
+	@extend%btn_arrow;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: $white-color;
+	}
+}
+.offer__list {
+	width: 100%;
+	display: flex;
+	
+	
+	@include bp($point_2, min) {
+		flex-wrap: wrap;
+		column-gap: 2rem;
+	}
+	
+	@include bp($point_3) {
+	flex-direction: column;
+	row-gap: 2rem;
+	}
+	
+	
+	.product__item {
+		&.product__item.product__item--nine {
+			background: url(../imgs/offer/offer_1.png), #f9f8f8;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&.product__item.product__item--ten {
+			background: url(../imgs/offer/offer_2.png), #f9f8f8;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&.product__item.product__item--eleven {
+			background: url(../imgs/offer/offer_3.png), #f9f8f8;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&.product__item.product__item--tvelwe {
+			background: url(../imgs/offer/offer_4.png), #f9f8f8;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&:hover {
+			box-shadow: 2px -1px 16px -3px rgba(255, 255, 255, 0.75);
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.select {
+	background-color: #f1f8f4;
+    
+    @include bp($point_3) {
+    padding: 3rem 0;
+    }
+    
+}
+.select__in {
+	width: 100%;
+}
+.select_slider {
+	width: 100%;
+    
+   
+    
+}
+.select_slider__item_w {
+	padding-bottom: 5rem;
+}
+.select_slider__item {
+	width: 100%;
+
+	position: relative;
+	cursor: pointer;
+
+	@include bp($point_2, min) {
+		height: 60rem;
+	}
+
+	@include bp($point_3) {
+		height: 100%;
+	}
+}
+.select__img_w {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+.select__img {
+	@extend %contain_image;
+}
+.select__btn {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	@extend%btn_size_4;
+	@extend%btn_color_3;
+	@extend%btn_font_2;
+
+	@include bp($point_3) {
+		width: 8rem;
+        padding: 0 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+	}
+}
+.slect_pagination {
+	span {
+		background-color: $green-color_accent;
+	}
+}

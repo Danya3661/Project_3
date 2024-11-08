@@ -1,0 +1,50 @@
+
+.the{
+    padding-bottom: 0;
+}
+
+.the__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.the__list_w {
+	width: 93.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 3rem;
+}
+.the__afarm_list,
+.the__hfarm_list,
+ .the__cfarm_list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+.farm_title {
+	font-size: 3.4rem;
+	font-weight: 800;
+	line-height: 4rem;
+	color: $accent-color;
+}
+.afarm__img_w {
+	display: block;
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+.afarm__img {
+	@extend %contain_image;
+	border-radius: 3rem;
+}
+.afarm__img_subtitle {
+	font-family: $font_2;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.8rem;
+	margin: 0 auto;
+}
+

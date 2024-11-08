@@ -1,0 +1,84 @@
+.location {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 0;
+}
+.location__in {
+	background-image: url(../imgs/location/l_1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	min-height: 75.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    
+	
+	@include bp($point_2, min) {
+		padding: 0 10.8rem;
+		border-radius: 3rem;
+	}
+	
+}
+.location_block {
+	background-color: $white-color;
+	border-radius: 3rem;
+	
+	
+	@include bp($point_2, min) {
+		
+		width: 51.4rem;
+		padding: 4.6rem 5.2rem;
+	}
+	
+	@include bp($point_3) {
+		width: 100%;
+		padding: 2.2rem 2.2rem;
+	}
+	
+	
+}
+.location__info {
+	display: flex;
+	flex-direction: column;
+}
+.location__title {
+	margin-bottom: 1rem;
+}
+.location__descr {
+	margin-bottom: 2rem;
+}
+.location__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2.2rem;
+}
+.location__item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	column-gap: 0.6rem;
+}
+.location__img_w {
+	width: 5rem;
+	height: 5rem;
+	display: block;
+	object-fit: contain;
+}
+.location__img {
+	@extend %contain_image;
+}
+.location__adress {
+	width: 25rem;
+	font-family: $font_2;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 2.8rem;
+	color: $text-color;
+	span {
+		font-weight: 400;
+	}
+}

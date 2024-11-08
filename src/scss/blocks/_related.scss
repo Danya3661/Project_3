@@ -1,0 +1,37 @@
+
+
+.related__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include bp($point_2, min) {
+		row-gap: 4rem;
+	}
+
+	@include bp($point_3) {
+		row-gap: 2rem;
+	}
+}
+.related__title {
+	@include bp($point_3) {
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+}
+.related__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	@include bp($point_2, min) {
+		justify-content: center;
+		column-gap: 2rem;
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}

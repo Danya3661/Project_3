@@ -1,0 +1,31 @@
+.shop {
+	background-image: url(../imgs/shop/shop_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 45rem;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	@include bp($point_2, min) {
+		background-position: center;
+	}
+	
+	@include bp($point_3) {
+		background-position: left;
+	}
+	
+	
+}
+.shop__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+}
+.shop__title{
+    font-size: 7rem;
+	font-weight: 800;
+	line-height: 8.2rem;
+    color: $accent-color;
+}

@@ -1,0 +1,47 @@
+
+
+
+.expert__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    row-gap: 4.2rem;
+    max-width: 150rem;
+    
+    
+}
+.expert__main_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.expert__title{
+    margin-bottom: 1.6rem;
+}
+.expert__descr{
+    max-width: 85.2rem;
+}
+.expert__list{
+    width: 100%;
+	display: flex;
+	align-items: center;
+    
+
+	@include bp($point_2, min) {
+		justify-content: center;
+		column-gap: 2.6rem;
+        flex-wrap: wrap;
+        row-gap: 4.2rem;
+		
+	}
+
+	@include bp($point_3) {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}

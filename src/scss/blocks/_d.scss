@@ -1,0 +1,70 @@
+.d {
+	padding: 0;
+}
+
+.d__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 2.2rem;
+
+	@include bp($point_2, min) {
+		width: 93.6rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.d__blocks_w {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 5rem;
+}
+.d__block {
+	width: 100%;
+	&.d__block.d__block--one {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2.6rem;
+	}
+	&.d__block.d__block--two {
+		border-radius: 3rem;
+		overflow: hidden;
+	}
+	&.d__block.d__block--three {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2.6rem;
+	}
+}
+.d__block_list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+.d__text_w {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f1edea;
+}
+.d__text {
+	font-family: $font_2;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 3.2rem;
+	text-align: center;
+	color: $accent-color;
+	padding: 7rem 6rem;
+}
+.d__figure_list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}

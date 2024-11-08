@@ -1,0 +1,35 @@
+.shop_single {
+	
+	min-height: 45rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+    @include bp($point_2, min) {
+        background-image: url(../imgs/shop/shop_single_bg.jpg), url(../imgs/shop/shop_single_bg2.jpg);
+        background-repeat: no-repeat;
+        background-color: #f3f2f7;
+        background-position: left, right;
+        background-size: contain;
+    }
+    
+    @include bp($point_3) {
+        background-image: url(../imgs/shop/shop_single_bg.jpg);
+        background-repeat: no-repeat;
+        background-color: #f3f2f7;
+        background-position: left;
+        background-size: cover;
+    }
+    
+}
+.shop_single__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.shop_single__title {
+	font-size: 7rem;
+	font-weight: 800;
+	line-height: 8.2rem;
+	color: $accent-color;
+}

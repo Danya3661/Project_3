@@ -1,0 +1,97 @@
+.research {
+	position: relative;
+
+	@include bp($point_2, min) {
+		min-height: 112rem;
+		padding: 0;
+	}
+
+	@include bp($point_3) {
+		padding-top: 0;
+	}
+}
+.research__in {
+	display: flex;
+	padding: 0;
+}
+.research__img_w {
+	width: 100%;
+	height: 90rem;
+	display: block;
+	object-fit: cover;
+	z-index: -1;
+}
+.research__img {
+	@extend %cover_image;
+}
+.research_block {
+	background-color: $white-color;
+	border-radius: 3rem;
+	box-shadow: 0px 14px 36px 0px #cccccc40;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	z-index: 4;
+
+	@include bp($point_2, min) {
+		top: 75%;
+		padding: 7.6rem 8.2rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+		top: 50%;
+		padding: 4.2rem 4rem;
+	}
+}
+.research__info {
+	display: flex;
+	align-items: center;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	column-gap: 3rem;
+	color: $accent-color;
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
+.research__info_title {
+	font-weight: 600;
+
+	span {
+		font-weight: 400;
+	}
+}
+.news__item_name.news__item_name--zero {
+	margin-bottom: 0;
+}
+.research__title {
+	font-weight: 800;
+
+	color: $accent-color;
+
+	@include bp($point_2, min) {
+		width: 91.6rem;
+		font-size: 7rem;
+		line-height: 8.2rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+		font-size: 3.4rem;
+		line-height: 4rem;
+	}
+}
+.research__descr {
+	@include bp($point_2, min) {
+		width: 72.6rem;
+	}
+
+	@include bp($point_3) {
+		width: 100%;
+	}
+}
